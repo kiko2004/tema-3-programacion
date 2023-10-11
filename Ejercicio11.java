@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ejercicio11 {
     public static void main(String[] args) {
-        Scanner inputScanner = new Scanner(System.in);
+        Scanner Scanner = new Scanner(System.in);
         double num;
         double suma = 0;
         double cantidadNum = 0;
@@ -10,7 +10,7 @@ public class Ejercicio11 {
         System.out.println("Introduce números, introduce uno negativo para calcular la media:");
 
         do {
-            num = inputScanner.nextDouble();
+            num = Scanner.nextDouble();
 
             if (num < 0) {
                 break;
