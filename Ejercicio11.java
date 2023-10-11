@@ -6,7 +6,8 @@ public class Ejercicio11 {
         double num;
         double suma = 0;
         double cantidadNum = 0;
-
+        double media;
+        
         System.out.println("Introduce números, introduce uno negativo para calcular la media:");
 
         do {
