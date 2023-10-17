@@ -16,8 +16,7 @@ public class Ejercicio13 {
             }
         }
         double porcentajeCaras = (caras / (double) lanzamientos) * 100;
-        double porcentajeCruces = (cruces / (double) lanzamientos) * 100;
-
+        double porcentajeCruces = (cruces / (double) lanzamientos) * 100
         System.out.println("Resultado:");
         System.out.println("Caras: " + caras + " (" + porcentajeCaras + "%)");
         System.out.println("Cruces: " + cruces + " (" + porcentajeCruces + "%)");
