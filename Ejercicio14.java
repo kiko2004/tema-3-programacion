@@ -9,22 +9,22 @@ public class Ejercicio14 {
         for (int i = 0; i < lanzamientos; i++) {
             int resultado = random.nextInt(6) + 1;
             switch (resultado) {
-                case 1:
+                    case 1:
                     cara1++;
                     break;
-                case 2:
+                    case 2:
                     cara2++;
                     break;
-                case 3:
+                    case 3:
                     cara3++;
                     break;
-                case 4:
+                    case 4:
                     cara4++;
                     break;
-                case 5:
+                    case 5:
                     cara5++;
                     break;
-                case 6:
+                    case 6:
                     cara6++;
                     break;
             }
