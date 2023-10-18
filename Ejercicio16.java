@@ -24,36 +24,37 @@ public class Ejercicio16 {
 
                 switch (tiro) {
                     case 1:
-                        break;
+                    break;
                     case 2:
                     case 3:
                     case 4:
                     case 5:
                     case 6:
-                        if (dado == puntos)
+                            if (dado == puntos)
                             porraJugador += 2;
-                        else if (dado > puntos)
+                            else if (dado > puntos)
                             porraOrdenador++;
-                        break;
+                            break;
                 }
 
                 System.out.println("Has sacado " + tiro + ". Tu puntuación es " + dado);
 
                 if (dado >= puntos)
-                    break;
+                break;
 
                 System.out.print("¿Quieres tirar otra vez (s/n)?: ");
                 String respuesta = scanner.next();
 
                 if (respuesta.equalsIgnoreCase("n"))
-                    break;
-            }
+                break;
+            
+        }
 
             if (dado < puntos) {
                 while (dadoComputadora < dado && dadoComputadora < puntos) {
                     int tiro = random.nextInt(6) + 1;
                     dadoComputadora += tiro;
-                }
+                    }
 
                 if (dadoComputadora == dado)
                     porraOrdenador++;
@@ -64,13 +65,13 @@ public class Ejercicio16 {
                 
                 System.out.println("\nPorras - Jugador: " + porraJugador + " | Computadora: " + porraOrdenador);
                 System.out.println("La computadora ha sacado " + dadoComputadora + ".\n");
-            }
+                }
 
-            if (porraJugador >= porrasGanar) {
-                System.out.println("¡Has ganado la partida!");
-            } else if (porraOrdenador >= porrasGanar) {
-                System.out.println("La computadora ha ganado la partida.");
-            }
+                if (porraJugador >= porrasGanar) {
+                    System.out.println("¡Has ganado la partida!");
+                } else if (porraOrdenador >= porrasGanar) {
+                    System.out.println("La computadora ha ganado la partida.");
+                }
         }
     }
 }
